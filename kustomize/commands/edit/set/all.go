@@ -48,6 +48,7 @@ func NewCmdSet(
 		newCmdSetReplicas(fSys),
 		newCmdSetLabel(fSys, ldr.Validator().MakeLabelValidator()),
 		newCmdSetAnnotation(fSys, ldr.Validator().MakeAnnotationValidator()),
+		newCmdSetHelmVersion(fSys),
 	)
 	return c
 }
